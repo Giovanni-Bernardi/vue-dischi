@@ -1,0 +1,122 @@
+/* GENERAL CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #181818;
+}
+
+/* MAIN CONTAINER */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SELECT CATEGORIES */
+select {
+  width: 150px;
+  border-radius: 20px;
+  height: 40px;
+  text-align: center;
+  /* display: flex; */
+  background-color: #1ed760;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: white;
+  font-weight: 700;
+}
+
+/* track WRAPPING */
+#track-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#app.library {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 60%;
+  max-width: 992px;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+#track-box > div:nth-child(4) > div > img {
+  padding-bottom: 20px;
+}
+
+.track {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  margin: 10px;
+  padding-bottom: 15px;
+  background-color: #202020;
+}
+
+.track-cover {
+  height: 200;
+  width: 200px;
+}
+
+.track-cover > img {
+  width: inherit;
+  object-fit: contain;
+  width: 200px;
+  height: auto;
+}
+
+.track-cover > img :hover {
+  width: 200px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.116);
+  color: white;
+}
+
+/* track TEXTS */
+
+.track-text {
+  font-size: 18px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.author {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(214, 214, 214);
+}
+
+#title {
+  text-align: center;
+  margin-bottom: -20px;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+#track-box > div:nth-child(3) > h2 {
+  padding-top: 10px;
+}
+
+#track-box > div:nth-child(6) > h2 {
+  padding-top: 10px;
+}
