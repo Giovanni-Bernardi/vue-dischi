@@ -18,6 +18,15 @@ body {
   align-items: center;
 }
 
+#title {
+  text-align: center;
+  margin-bottom: -20px;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
 /* SELECT CATEGORIES */
 select {
   width: 150px;
@@ -36,15 +45,15 @@ select {
 #track-box {
   display: flex;
   flex-wrap: wrap;
+  /* margin: 45px; */
 }
 
 #app.library {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  width: 60%;
-  max-width: 992px;
+  width: 70%;
+  max-width: 1200px;
 }
 
 #menu {
@@ -64,13 +73,13 @@ select {
   flex-direction: column;
   align-items: center;
   border-radius: 4px;
-  margin: 10px;
+  margin: 15px;
   padding-bottom: 15px;
   background-color: #202020;
 }
 
 .track-cover {
-  height: 200;
+  height: 200px;
   width: 200px;
 }
 
@@ -78,13 +87,14 @@ select {
   width: inherit;
   object-fit: contain;
   width: 200px;
-  height: auto;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
 }
 
 .track-cover > img :hover {
   width: 200px;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.116);
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.116);
   color: white;
 }
 
@@ -105,21 +115,14 @@ select {
   color: rgb(214, 214, 214);
 }
 
-#title {
-  text-align: center;
-  margin-bottom: -20px;
-  color: #ffffff;
-  font-weight: 100;
-  font-size: 30px;
-}
 
-#track-box > div:nth-child(3) > h2 {
+/* #track-box > div:nth-child(3) > h2 {
   padding-top: 10px;
 }
 
 #track-box > div:nth-child(6) > h2 {
   padding-top: 10px;
-}
+} */
 
 /* year */
 small {
