@@ -120,3 +120,8 @@ select {
 #track-box > div:nth-child(6) > h2 {
   padding-top: 10px;
 }
+
+/* year */
+small {
+  color: #ffffff;
+}
