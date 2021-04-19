@@ -28,9 +28,12 @@ function initVue() {
     },
 
     computed: {
+      sortByYear: function() {
+      return this.music.sort((a,b) => a.year - b.year)
+    },
       filterByGenre: function () {
         if (this.filterKey == "All") {
-          return this.music;
+          return this.sortByYear
         } else {
           return this.music.filter((track) => {
             return track.genre == this.filterKey;
@@ -49,9 +52,12 @@ function initVue() {
       axios
         .get("https://flynn.boolean.careers/exercises/api/array/music")
         .then((data) => {
-          this.music = data.data.response;
-          this.getMusicGenres();
-          console.log(this.genres);
+        //ORDER BY GENRE
+         this.music = data.data.response;
+         this.getMusicGenres();
+         console.log(this.genres);
+
+
         });
     },
   });
